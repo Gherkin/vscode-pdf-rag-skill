@@ -5,3 +5,4 @@ out
 .env
 .DS_Store
 vector_db/
+vector_store.json
