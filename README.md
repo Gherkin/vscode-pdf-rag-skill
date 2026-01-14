@@ -22,7 +22,7 @@ ollama pull mxbai-embed-large
 ```bash
 cd your-repo
 
-git submodule add https://github.com/yourusername/vscode-agent-rag .github/skills/pdf-rag-knowledge
+git submodule add https://github.com/Gherkin/vscode-pdf-rag-skill.git .github/skills/pdf-rag-knowledge
 git submodule update --init --recursive
 ```
 
@@ -74,7 +74,7 @@ Just ask natural questions in Copilot Chat. The skill activates automatically wh
 - Communication protocols
 - Any technical info from datasheets
 
-## 🔍 How It Works
+## How It Works
 
 1. **Indexing**: PDFs chunked into 2000-char segments with 400-char overlap
 2. **Embeddings**: Generated via Ollama (local, free, private)
@@ -91,7 +91,7 @@ export CHUNK_SIZE=2000
 export CHUNK_OVERLAP=400
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ```bash
 # Check status
