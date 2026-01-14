@@ -16,9 +16,9 @@ import hashlib
 SKILL_DIR = Path(__file__).parent
 VECTOR_STORE_PATH = SKILL_DIR / "vector_store.json"
 OLLAMA_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "mxbai-embed-large")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "nomic-embed-text")
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "2000"))
-CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "400"))
+CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "500"))
 
 
 def embed_text(text: str) -> List[float]:
