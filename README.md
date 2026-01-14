@@ -1,4 +1,4 @@
-# VSCode Agent RAG - PDF RAG Copilot Skill
+# VSCode PDF RAG Skill
 
 A GitHub Copilot Agent Skill for using Retrieval-Augmented Generation (RAG) to increase accuracy of AI responses based on information from manuals, datasheets, etc.  
 Uses a locally stored vector store based on hashlib to store the embeddings, and provides a cli tool for generating embeddings from PDF files using Ollama.
