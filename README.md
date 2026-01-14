@@ -9,11 +9,11 @@ Uses a locally stored vector store based on hashlib to store the embeddings, and
 Install [Ollama](https://ollama.com/).  
 Install Python dependencies
 ```bash
-pip install requests PyPDF2
+pip install requests PyPDF2 pycryptodome
 ```
-Install Ollama model (default is mxbai-embed-large)
+Install Ollama model (default is nomic-embed-text)
 ```bash
-ollama pull mxbai-embed-large
+ollama pull nomic-embed-text
 ```
 
 
@@ -82,14 +82,14 @@ Just ask natural questions in Copilot Chat. The skill activates automatically wh
 4. **Integration**: Auto-loads when Copilot detects relevant questions
 
 ## Configuration
-
-Optional environment variables:
+Optional environment variables used (the default can be changed in the python script):
 ```bash
 export OLLAMA_BASE_URL=http://localhost:11434
 export OLLAMA_MODEL=mxbai-embed-large
 export CHUNK_SIZE=2000
 export CHUNK_OVERLAP=400
 ```
+
 
 ## Troubleshooting
 
